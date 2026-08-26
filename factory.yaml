@@ -1,0 +1,26 @@
+version: 1
+
+required_binaries:
+  - node
+
+install: echo "no install — static GH Pages site"
+
+checks:
+  - name: site-exists
+    command: test -f index.html && test -f CNAME
+
+build: echo "no build — single-page static site"
+
+protected_paths:
+  - CNAME
+  - .nojekyll
+  - index.html
+
+human_gates:
+  - production deployment changes
+  - domain/DNS changes
+
+preview:
+  command: python3 -m http.server {port}
+  port: 4333
+  health_path: /

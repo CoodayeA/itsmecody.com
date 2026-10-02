@@ -1,165 +1,186 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cody Alexander | Technical Account Manager</title>
-<meta name="description" content="Technical Account Manager at InterWorks. I own post-sales technical relationships for about 40 customers and build AI infrastructure on my own time.">
-<meta property="og:title" content="Cody Alexander | Technical Account Manager">
-<meta property="og:description" content="Customer engineering for data and AI infrastructure. Five years keeping business-critical platforms running, and the relationships around them healthy.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://itsmecody.com/">
-<meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0c0c0d" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d4ed8'/%3E%3Ctext x='16' y='21.5' font-family='Helvetica,Arial,sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3ECA%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css">
+{% include head.html %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Cody Alexander",
+  "url": "https://itsmecody.com/",
+  "jobTitle": "Technical Account Manager",
+  "worksFor": { "@type": "Organization", "name": "InterWorks", "url": "https://interworks.com" },
+  "email": "mailto:cody.alexander.biz@gmail.com",
+  "telephone": "+1-689-234-1073",
+  "address": { "@type": "PostalAddress", "addressLocality": "Winter Garden", "addressRegion": "FL", "addressCountry": "US" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Central Washington University" },
+    { "@type": "CollegeOrUniversity", "name": "Lake Washington Institute of Technology" }
+  ],
+  "knowsAbout": ["Technical account management", "Customer engineering", "Tableau Server", "Alteryx Server", "Snowflake", "Matillion", "High availability", "Incident response", "LiteLLM", "Model Context Protocol", "AI agents", "Linux", "Docker", "PostgreSQL"],
+  "sameAs": ["https://www.linkedin.com/in/cody-alexander37", "https://github.com/CoodayeA"]
+}
+</script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+  {% include header.html %}
+  <main>
+    <div class="intro">
+      <h1>I keep the platforms running, and the <em>customers</em> confident.</h1>
+      <p class="role">Technical Account Manager for data and AI infrastructure</p>
+      <p>I'm the first Technical Account Manager at InterWorks. About 40 companies run their analytics on Tableau, Alteryx, Snowflake, and Matillion environments that my team keeps alive around the clock, and I own the technical relationship with each of them.</p>
+      <p>When something breaks, I'm in the logs with their engineers. When it's fixed, I'm in the room with their VP explaining what we changed so it doesn't happen again. On my own time I run a self-hosted AI control plane and build iOS apps.</p>
+      <div class="links">
+        <a class="primary" href="#contact">Get in touch</a>
+        <span>
+          <a href="/Cody_Alexander_Resume.pdf">Resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/cody-alexander37" rel="me noopener">LinkedIn</a>
+          <a href="https://github.com/CoodayeA" rel="me noopener">GitHub</a>
+        </span>
+      </div>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top">Cody Alexander</a>
-    <nav aria-label="Primary">
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a class="nav-cta" href="Cody_Alexander_Resume.pdf">Resume</a>
-    </nav>
+      <div class="status" role="region" aria-label="Status page for Cody">
+        <div class="status-head">
+          <strong><span class="dot" aria-hidden="true"></span>All systems operational</strong>
+          <small>Uptime since 2020</small>
+        </div>
+        <ul>
+          <li><b>Customer portfolio</b><span class="pill">Operational</span><p>About 40 managed-services accounts, 24/7 SLA coverage</p></li>
+          <li><b>Quarterly service reviews</b><span class="pill">On schedule</span><p>Platform health and incident history turned into a plan</p></li>
+          <li><b>Homelab AI control plane</b><span class="pill">Operational</span><p>LiteLLM gateway, Postgres, agents, all on a Tailscale mesh</p></li>
+          <li><b>iOS side projects</b><span class="pill blue">In development</span><p>Pilotik and Blokhaus, built in SwiftUI</p></li>
+          <li><b>Availability</b><span class="pill hot">Open to new roles</span><p>TAM and customer engineering at data and AI infrastructure companies</p></li>
+        </ul>
+        <div class="status-foot"><span>Winter Garden, FL · Remote, US</span><span>Last updated October 2026</span></div>
+      </div>
+    </div>
+
+    <section id="writing" aria-labelledby="writing-h">
+      <div class="label"><h2 id="writing-h">Writing</h2><a href="/writing/">All posts</a></div>
+      {% include post-list.html posts=site.posts limit=5 %}
+    </section>
+
+    <section id="work" aria-labelledby="work-h">
+      <div class="label"><h2 id="work-h">Work</h2><a href="/Cody_Alexander_Resume.pdf">Full resume</a></div>
+      <ol class="jobs" reversed>
+        <li>
+          <span class="when">2025 to now</span>
+          <div>
+            <h3>Technical Account Manager <span>at InterWorks</span><span class="first">First TAM</span></h3>
+            <p>Built the TAM practice from scratch and defined how managed-services customers are onboarded, reviewed, and supported.</p>
+            <ul>
+              <li>Own the technical relationship for about 40 customers, from founder-led startups to large enterprises.</li>
+              <li>Lead onboarding for every new customer, from kickoff and discovery through environment transition and handoff.</li>
+              <li>Run quarterly service reviews that turn platform health and incident history into priorities for engineers and executive sponsors.</li>
+              <li>Debug production issues directly with customer developers, and turn recurring problems into playbooks and a biannual customer newsletter.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">2022 to 2025</span>
+          <div>
+            <h3>Systems Engineer <span>at InterWorks</span></h3>
+            <p>Kept Tableau Server and Alteryx Server available across single-node and clustered high-availability environments, with SLA-backed 24/7 support across global regions. Earned the Alteryx Server Implementation certification.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020 to 2021</span>
+          <div>
+            <h3>Systems Administrator <span>at InterWorks</span></h3>
+            <p>Supported about 400 users worldwide across Windows and Linux servers and networking, and led a mobile device policy rollout across the UK and Europe. Started as an intern and was promoted within three months.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+</div>
+
+<section id="projects" class="wide" aria-labelledby="projects-h">
+  <div class="label"><h2 id="projects-h">Projects</h2><a href="https://github.com/CoodayeA" rel="noopener">GitHub</a></div>
+  <div class="projects">
+    <article class="proj">
+      <div class="shot shot-ai">
+        <svg viewBox="0 0 420 236" role="img" aria-label="Diagram: agents call a LiteLLM gateway, which routes to OpenAI, Anthropic, and OpenRouter and stores context in Postgres, all on a Tailscale mesh">
+          <rect class="mesh" x="8" y="8" width="404" height="220" rx="12"/>
+          <text class="ml" x="22" y="28">tailscale mesh</text>
+          <path class="wire" d="M96 118 H168"/><path class="wire" d="M252 118 C 286 118, 286 62, 316 62"/><path class="wire" d="M252 118 H316"/><path class="wire" d="M252 118 C 286 118, 286 174, 316 174"/><path class="wire" d="M210 138 V170"/>
+          <g class="n"><rect x="26" y="100" width="70" height="36" rx="8"/><text x="61" y="122">agents</text></g>
+          <g class="n hub"><rect x="168" y="98" width="84" height="40" rx="9"/><text x="210" y="122">LiteLLM</text></g>
+          <g class="n"><rect x="316" y="46" width="86" height="32" rx="8"/><text x="359" y="66">OpenAI</text></g>
+          <g class="n"><rect x="316" y="102" width="86" height="32" rx="8"/><text x="359" y="122">Anthropic</text></g>
+          <g class="n"><rect x="316" y="158" width="86" height="32" rx="8"/><text x="359" y="178">OpenRouter</text></g>
+          <g class="n"><rect x="170" y="170" width="80" height="32" rx="8"/><text x="210" y="190">Postgres</text></g>
+          <circle class="pk" r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite" path="M96 118 H252 C 286 118, 286 62, 316 62"/></circle>
+          <circle class="pk" r="3.5"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" path="M96 118 H252 C 286 118, 286 174, 316 174"/></circle>
+        </svg>
+      </div>
+      <div class="proj-body">
+        <h3>Self-hosted AI control plane <span>2025 to now</span></h3>
+        <p>A private multi-node homelab. LiteLLM routes requests across model providers with spend tracking, Postgres holds context, and agents act through scoped permissions with a human approving the decisions that matter.</p>
+        <p class="stack">LiteLLM · PostgreSQL · Docker · Tailscale · MCP</p>
+      </div>
+    </article>
+
+    <a class="proj" href="https://coodayea.github.io/pilotik-site/" rel="noopener">
+      <div class="shot shot-pilotik"><img src="/pilotik-icon.png" alt="Pilotik app icon" width="96" height="96"><small>YOUR PILATES CLASS TIMER</small></div>
+      <div class="proj-body">
+        <h3>Pilotik <span>iOS</span></h3>
+        <p>A class timer for Pilates instructors. Build routines, run class from a live timeline with teleprompter notes, and keep a log of everything you've taught.</p>
+        <p class="stack">SwiftUI · SwiftData · CloudKit</p>
+      </div>
+    </a>
+
+    <a class="proj" href="https://coodayea.github.io/blokhaus-site/" rel="noopener">
+      <div class="shot shot-blokhaus">
+        <span class="grid g1" aria-hidden="true"><i style="--c:#ffd60a"></i><i style="--c:#ffd60a"></i><i></i><i></i><i style="--c:#ffd60a"></i><i style="--c:#ffd60a"></i></span>
+        <span class="wm" aria-label="Blokhaus"><b>BLOK</b><i>HAUS</i></span>
+        <span class="grid g2" aria-hidden="true"><i style="--c:#2dd4bf"></i><i></i><i></i><i style="--c:#2dd4bf"></i><i style="--c:#2dd4bf"></i><i style="--c:#ff2d78"></i></span>
+      </div>
+      <div class="proj-body">
+        <h3>Blokhaus <span>iOS</span></h3>
+        <p>A block puzzle game with Classic, Blitz, Adventure, Roguelike, Daily, and Zen modes. No ads and no pay-to-win.</p>
+        <p class="stack">SwiftUI · SpriteKit</p>
+      </div>
+    </a>
+
+    <a class="proj" href="https://github.com/Gratonite-Labs" rel="noopener">
+      <div class="shot shot-gratonite">
+        <div class="chat" aria-hidden="true"><span>anyone up for a voice call?</span><span class="me">on my own server, yes</span><span>federation works now</span></div>
+      </div>
+      <div class="proj-body">
+        <h3>Gratonite <span>Open source</span></h3>
+        <p>A self-hosted, federated alternative to Discord, built with friends across web, mobile, desktop, and a realtime API. Deploys with one Docker Compose file.</p>
+        <p class="stack">React · Expo · Electron · Docker</p>
+      </div>
+    </a>
   </div>
-</header>
+</section>
 
-<main id="main">
-  <section class="hero wrap" id="top">
-    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Open to new roles · Remote, US</p>
-    <h1>I keep critical infrastructure running, and the customers who depend on it confident.</h1>
-    <p class="lede">Technical Account Manager at InterWorks, where I own the post-sales technical relationship for about 40 customers on Tableau, Alteryx, Snowflake, and Matillion. Off the clock, I run a self-hosted AI control plane and ship iOS apps.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="mailto:cody.alexander.biz@gmail.com">Email me</a>
-      <a class="btn" href="Cody_Alexander_Resume.pdf">Download resume</a>
-      <a class="btn btn-ghost" href="https://linkedin.com/in/cody-alexander37" rel="noopener">LinkedIn ↗</a>
-    </div>
-    <dl class="stats">
-      <div><dt>~40</dt><dd>customer accounts owned</dd></div>
-      <div><dt>5+ yrs</dt><dd>production support, 24/7 SLA</dd></div>
-      <div><dt>1st</dt><dd>TAM at InterWorks; built the practice</dd></div>
-    </dl>
-  </section>
-
-  <section class="section wrap" id="about">
-    <h2 class="label">About</h2>
-    <div class="prose">
-      <p>I started at InterWorks as an IT intern in 2020 and worked my way through systems administration and systems engineering before becoming the company's first Technical Account Manager. That path means I can debug a failing cluster with a customer's engineers in the morning and walk their VP through what it means for the business in the afternoon.</p>
-      <p>I'm looking for my next role in technical account management, customer engineering, or solutions engineering, ideally at a company building data or AI infrastructure.</p>
+<div class="page">
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Hiring a Technical Account Manager? <em>Let's talk.</em></h2>
+    <p>Email is the fastest way to reach me.</p>
+    <div class="contact-row">
+      <a class="go" href="mailto:cody.alexander.biz@gmail.com">cody.alexander.biz@gmail.com</a>
+      <button class="copy" type="button" data-copy="cody.alexander.biz@gmail.com">Copy email <em>to clipboard</em></button>
+      <a href="tel:+16892341073">689-234-1073</a>
     </div>
   </section>
 
-  <section class="section wrap" id="experience">
-    <h2 class="label">Experience</h2>
-    <ol class="timeline">
-      <li>
-        <div class="when">2025 to now</div>
-        <div>
-          <h3>Technical Account Manager <span class="org">InterWorks</span></h3>
-          <ul>
-            <li>First TAM at the company. Built the practice and defined how managed-services customers are onboarded, monitored, and supported.</li>
-            <li>Own the technical relationship for about 40 customers, from founder-led startups to large enterprises.</li>
-            <li>Run quarterly service reviews that turn platform health and incident history into priorities for engineers and executive sponsors.</li>
-            <li>Debug production issues directly with customer developers and admins, from first investigation through validation.</li>
-            <li>Launched a biannual customer newsletter and turned recurring problems into documentation and playbooks.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="when">2022 to 2025</div>
-        <div>
-          <h3>Systems Engineer <span class="org">InterWorks</span></h3>
-          <ul>
-            <li>Kept Tableau Server and Alteryx Server available across single-node and clustered high-availability environments.</li>
-            <li>Delivered SLA-backed 24/7 support across global regions and diagnosed ambiguous failures on Windows and Linux.</li>
-            <li>Earned the Alteryx Server Implementation certification.</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="when">2020 to 2021</div>
-        <div>
-          <h3>Systems Administrator and IT Intern <span class="org">InterWorks</span></h3>
-          <ul>
-            <li>Supported about 400 global users and administered Windows and Linux servers, networking, and core applications.</li>
-            <li>Led a mobile device and policy rollout across the UK and Europe. Promoted from intern within three months.</li>
-          </ul>
-        </div>
-      </li>
-    </ol>
-  </section>
+  {% include footer.html %}
+</div>
 
-  <section class="section wrap" id="projects">
-    <h2 class="label">Projects</h2>
-    <div class="cards">
-      <article class="card card-wide">
-        <p class="kicker">AI infrastructure</p>
-        <h3>Self-hosted AI control plane</h3>
-        <p>A private multi-node homelab exposed over Tailscale. LiteLLM and PostgreSQL handle provider routing, persistent context, and spend tracking. Agents work through permissioned actions with human review at the decision points, backed by documented backups and rollback.</p>
-        <p class="tags">LiteLLM · PostgreSQL · Docker · Tailscale · MCP · OpenAI and Anthropic APIs</p>
-      </article>
-      <article class="card">
-        <p class="kicker">iOS app</p>
-        <h3><a href="https://coodayea.github.io/pilotik-site/" rel="noopener">Pilotik ↗</a></h3>
-        <p>A class timer for Pilates instructors with routines, a live scrolling timeline, teleprompter notes, and automatic session logging.</p>
-        <p class="tags">SwiftUI · SwiftData · CloudKit</p>
-      </article>
-      <article class="card">
-        <p class="kicker">iOS game</p>
-        <h3><a href="https://coodayea.github.io/blokhaus-site/" rel="noopener">Blokhaus ↗</a></h3>
-        <p>A block puzzle game with seven modes, including a roguelike with 40+ perks, daily challenges, and an adventure mode. No ads.</p>
-        <p class="tags">SwiftUI · SpriteKit</p>
-      </article>
-      <article class="card">
-        <p class="kicker">Open source</p>
-        <h3><a href="https://github.com/CoodayeA/Gratonite" rel="noopener">Gratonite ↗</a></h3>
-        <p>A privacy-first, self-hostable chat platform built with friends, with federation between independent instances.</p>
-        <p class="tags">Web · iOS · Self-hosted</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap" id="skills">
-    <h2 class="label">Skills</h2>
-    <div class="skills">
-      <div>
-        <h3>Customer engineering</h3>
-        <p>Technical onboarding, implementation planning, quarterly business reviews, escalation ownership, enablement and demos, executive and developer stakeholders</p>
-      </div>
-      <div>
-        <h3>Infrastructure</h3>
-        <p>Linux, Windows Server, Docker, PostgreSQL, networking, high availability and clustering, observability, incident response, root-cause analysis</p>
-      </div>
-      <div>
-        <h3>Platforms and cloud</h3>
-        <p>Tableau Server, Alteryx Server, Snowflake, Matillion, AWS, Azure, GCP, Git and GitHub</p>
-      </div>
-      <div>
-        <h3>AI and automation</h3>
-        <p>AI agents and orchestration, LiteLLM, OpenRouter, Model Context Protocol, OpenAI and Anthropic APIs, Claude Code</p>
-      </div>
-    </div>
-    <p class="edu">B.S. Business Administration and Information Technology, Central Washington University · A.A.S. Computer Programming, Lake Washington Institute of Technology</p>
-  </section>
-
-  <section class="contact wrap" id="contact">
-    <h2>Let's talk.</h2>
-    <p>If you're hiring for technical account management, customer engineering, or solutions roles, I'd like to hear from you.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="mailto:cody.alexander.biz@gmail.com">cody.alexander.biz@gmail.com</a>
-      <a class="btn" href="tel:+16892341073">689-234-1073</a>
-    </div>
-  </section>
-</main>
-
-<footer class="wrap footer">
-  <span>Cody Alexander · Winter Garden, FL</span>
-  <span><a href="https://linkedin.com/in/cody-alexander37" rel="noopener">LinkedIn</a> · <a href="https://github.com/CoodayeA" rel="noopener">GitHub</a> · <a href="Cody_Alexander_Resume.pdf">Resume</a></span>
-</footer>
+<script>
+  const copy = document.querySelector('.copy');
+  copy.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(copy.dataset.copy); } catch { location.href = 'mailto:' + copy.dataset.copy; return; }
+    copy.classList.add('done'); copy.lastElementChild.textContent = 'Copied';
+    setTimeout(() => { copy.classList.remove('done'); copy.lastElementChild.textContent = 'to clipboard'; }, 1800);
+  });
+</script>
 </body>
 </html>

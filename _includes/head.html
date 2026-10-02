@@ -1,0 +1,28 @@
+{%- assign t = page.title | default: "Cody Alexander, Technical Account Manager for Data and AI Infrastructure" -%}
+{%- if page.layout == "post" %}{% assign t = page.title | append: " | Cody Alexander" %}{% endif -%}
+{%- assign d = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 200 -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t }}</title>
+<meta name="description" content="{{ d }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="Cody Alexander">
+<meta property="og:title" content="{{ t }}">
+<meta property="og:description" content="{{ d }}">
+<meta property="og:image" content="{{ page.image | default: '/og.png' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ t }}">
+<meta name="twitter:description" content="{{ d }}">
+<meta name="twitter:image" content="{{ page.image | default: '/og.png' | absolute_url }}">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/atom+xml" href="/writing/feed.xml" title="Cody Alexander: Writing">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">

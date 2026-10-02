@@ -1,0 +1,20 @@
+title: Cody Alexander
+description: Technical Account Manager for data and AI infrastructure.
+url: https://itsmecody.com
+author: Cody Alexander
+timezone: America/New_York
+permalink: /writing/:title/
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+feed:
+  path: writing/feed.xml
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+exclude:
+  - factory.yaml
+  - README.md
+  - HOW-TO-BLOG.md
+  - _drafts/_template.md

@@ -1,0 +1,24 @@
+# Cody Alexander
+
+> Technical Account Manager for data and AI infrastructure, based in Winter Garden, FL (remote, US). Open to Technical Account Manager and customer engineering roles at data and AI infrastructure companies.
+
+## Summary
+- First Technical Account Manager at InterWorks (2025 to now). Built the TAM practice and owns the technical relationship for about 40 managed-services customers, from startups to large enterprises.
+- Platforms: Tableau Server, Alteryx Server, Snowflake, Matillion. High-availability and clustered environments, SLA-backed 24/7 support across global regions.
+- Previously Systems Engineer (2022 to 2025) and Systems Administrator (2020 to 2021) at InterWorks. Alteryx Server Implementation certification.
+- Infrastructure: Linux, Windows Server, Docker, PostgreSQL, AWS, Azure, GCP, observability, incident response.
+- AI: runs a self-hosted AI control plane (LiteLLM, PostgreSQL, Docker, Tailscale, MCP) with agent workflows and human review.
+- Side projects: Pilotik and Blokhaus (iOS, SwiftUI), Gratonite (open-source federated chat, github.com/Gratonite-Labs).
+- Education: B.S. Business Administration and IT, Central Washington University. A.A.S. Computer Programming, Lake Washington Institute of Technology.
+
+## Contact
+- Email: cody.alexander.biz@gmail.com
+- Phone: 689-234-1073
+- LinkedIn: https://www.linkedin.com/in/cody-alexander37
+- GitHub: https://github.com/CoodayeA
+
+## Pages
+- [Home](https://itsmecody.com/)
+- [Writing](https://itsmecody.com/writing/)
+- [What five years of 24/7 SLA support taught me about owning a customer relationship](https://itsmecody.com/writing/owning-the-customer-relationship/)
+- [Resume (PDF)](https://itsmecody.com/Cody_Alexander_Resume.pdf)

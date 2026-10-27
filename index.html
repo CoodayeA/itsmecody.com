@@ -25,24 +25,31 @@ layout: null
 }
 </script>
 </head>
-<body>
-<div class="page">
-  {% include header.html %}
-  <main>
-    <div class="intro">
-      <h1>I keep the platforms running, and the <em>customers</em> confident.</h1>
-      <p class="role">Technical Account Manager for data and AI infrastructure</p>
-      <p>I'm the first Technical Account Manager at InterWorks. About 40 companies run their analytics on Tableau, Alteryx, Snowflake, and Matillion environments that my team keeps alive around the clock, and I own the technical relationship with each of them.</p>
-      <p>When something breaks, I'm in the logs with their engineers. When it's fixed, I'm in the room with their VP explaining what we changed so it doesn't happen again. On my own time I run a self-hosted AI control plane and build iOS apps.</p>
-      <div class="links">
-        <a class="primary" href="#contact">Get in touch</a>
-        <span>
-          <a href="/Cody_Alexander_Resume.pdf">Resume (PDF)</a>
-          <a href="https://www.linkedin.com/in/cody-alexander37" rel="me noopener">LinkedIn</a>
-          <a href="https://github.com/CoodayeA" rel="me noopener">GitHub</a>
-        </span>
-      </div>
+<body class="home">
+{% include header.html %}
+<section class="hero" aria-label="Introduction">
+  <canvas id="field-canvas" aria-hidden="true"></canvas>
+  <div class="tally" data-field-avoid aria-hidden="true">
+    <div><span data-count-dogs>3</span> beagles</div>
+    <div><span data-count-fetched>0</span> fetched</div>
+  </div>
+  <div class="hero-copy">
+    <p class="quote" data-typed data-field-avoid><span data-line>all systems operational.</span><br><span data-line>click anywhere to throw the ball</span><span class="cursor" aria-hidden="true"></span></p>
+    <div class="bio">
+      <h1 data-field-avoid>Hi, I'm Cody.</h1>
+      <p data-field-avoid>Technical Account Manager @ <a href="https://interworks.com" rel="noopener">InterWorks</a>, keeping data and AI platforms running for about 40 companies.</p>
+      <p data-field-avoid>Before that, Systems Engineer and Systems Administrator there, since 2020.</p>
+      <p data-field-avoid>Off the clock, I run a <a href="#projects">self-hosted AI control plane</a> and build <a href="#projects">iOS apps</a>.</p>
+      <p data-field-avoid>Open to TAM and customer engineering roles. <a href="#contact">Let's talk</a>.</p>
+      <p class="links" data-field-avoid><a href="/Cody_Alexander_Resume.pdf">resume</a> / <a href="https://www.linkedin.com/in/cody-alexander37" rel="me noopener">linkedin</a> / <a href="https://github.com/CoodayeA" rel="me noopener">github</a> / <a href="mailto:cody.alexander.biz@gmail.com">email</a></p>
+    </div>
+  </div>
+</section>
 
+<div class="page">
+  <main>
+    <section id="status" aria-labelledby="status-h">
+      <div class="label"><h2 id="status-h">status</h2></div>
       <div class="status" role="region" aria-label="Status page for Cody">
         <div class="status-head">
           <strong><span class="dot" aria-hidden="true"></span>All systems operational</strong>
@@ -57,7 +64,7 @@ layout: null
         </ul>
         <div class="status-foot"><span>Winter Garden, FL · Remote, US</span><span>Last updated October 2026</span></div>
       </div>
-    </div>
+    </section>
 
     <section id="writing" aria-labelledby="writing-h">
       <div class="label"><h2 id="writing-h">Writing</h2><a href="/writing/">All posts</a></div>
@@ -166,7 +173,7 @@ layout: null
     <p>Email is the fastest way to reach me.</p>
     <div class="contact-row">
       <a class="go" href="mailto:cody.alexander.biz@gmail.com">cody.alexander.biz@gmail.com</a>
-      <button class="copy" type="button" data-copy="cody.alexander.biz@gmail.com">Copy email <em>to clipboard</em></button>
+      <button class="copy" type="button" data-copy="cody.alexander.biz@gmail.com">copy email <em>to clipboard</em></button>
       <a href="tel:+16892341073">689-234-1073</a>
     </div>
   </section>
@@ -174,13 +181,6 @@ layout: null
   {% include footer.html %}
 </div>
 
-<script>
-  const copy = document.querySelector('.copy');
-  copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); } catch { location.href = 'mailto:' + copy.dataset.copy; return; }
-    copy.classList.add('done'); copy.lastElementChild.textContent = 'Copied';
-    setTimeout(() => { copy.classList.remove('done'); copy.lastElementChild.textContent = 'to clipboard'; }, 1800);
-  });
-</script>
+<script src="/field.js" defer></script>
 </body>
 </html>
